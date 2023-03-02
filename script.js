@@ -3,10 +3,10 @@ let resposta = document.getElementById('resposta')
 
 
 for (let botao = 2; botao < 19; botao++){
-    btns[botao].addEventListener('click', teste)
+    btns[botao].addEventListener('click', adicionarValor)
 }
 
-function teste(){
+function adicionarValor(){
     resposta.value += this.value
 }
 
@@ -15,7 +15,7 @@ function limpar_resposta(){
 }
 
 function apagar(){
-    resposta.value = resposta.value.substr(0 , resposta.value.lenght -1)
+    resposta.value = resposta.value.substr(0, resposta.value.length - 1);
 }
 function resultado(){
     resposta.value = eval(resposta.value)
